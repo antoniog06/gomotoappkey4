@@ -35,6 +35,14 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                
+                NavigationLink(destination: SettingsView()) {
+                    Text("Settings")
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
             }
             .navigationTitle("GoMoto")
         }
