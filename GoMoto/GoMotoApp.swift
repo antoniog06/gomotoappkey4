@@ -1,7 +1,12 @@
 import SwiftUI
+import FirebaseCore
 
 @main
 struct GoMotoApp: App {
+    init() {
+      
+        FirebaseApp.configure()
+    }
     // Simulate a shared data container
     var sharedDataManager: SharedDataManager = SharedDataManager()
 

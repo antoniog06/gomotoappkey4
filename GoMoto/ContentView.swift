@@ -20,13 +20,6 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 
-                NavigationLink(destination: ProfileView()) {
-                    Text("Profile")
-                        .padding()
-                        .background(Color.purple)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
                 
                 NavigationLink(destination: RideHistoryView()) {
                     Text("Ride History")
