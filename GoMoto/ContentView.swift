@@ -1,33 +1,13 @@
-//
-//  ContentView.swift
-//  GoMoto
-//
-//  Created by AnthonyGarcia on 20/12/2024.
-//
-
-
-import SwiftData
-
 import SwiftUI
-
-
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                NavigationLink(destination: RideRequestView()) {
-                    Text("Request a Ride")
+                NavigationLink(destination: CombinedLiveMapView()) {
+                    Text("Request a Ride with Map")
                         .padding()
                         .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                
-                NavigationLink(destination: LiveMapView()) {
-                    Text("Live Map")
-                        .padding()
-                        .background(Color.green)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -66,3 +46,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
