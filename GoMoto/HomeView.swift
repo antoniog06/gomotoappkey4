@@ -1,19 +1,11 @@
-//
-//  HomeView.swift
-//  GoMoto
-//
-//  Created by AnthonyGarcia on 20/12/2024.
-//
-
-
 import SwiftUI
 
 struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                NavigationLink(destination: RideRequestView()) {
-                    Text("Request a Ride")
+                NavigationLink(destination: CombinedLiveMapView()) {
+                    Text("Request a Ride / Live Map")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
@@ -48,15 +40,6 @@ struct HomeView: View {
                         .cornerRadius(8)
                 }
 
-                NavigationLink(destination: LiveMapView()) {
-                    Text("Live Map Tracking")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.red)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-
                 Spacer()
             }
             .padding()
@@ -70,3 +53,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
