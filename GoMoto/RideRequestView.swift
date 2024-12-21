@@ -1,3 +1,11 @@
+//
+//  RideRequestView.swift
+//  GoMoto
+//
+//  Created by AnthonyGarcia on 20/12/2024.
+//
+
+
 import SwiftUI
 
 struct RideRequestView: View {
