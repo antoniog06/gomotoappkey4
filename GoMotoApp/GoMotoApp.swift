@@ -1,5 +1,7 @@
-import SwiftUI
+/*import SwiftUI
 import FirebaseCore
+
+
 
 @main
 struct GoMotoApp: App {
@@ -16,8 +18,34 @@ struct GoMotoApp: App {
                 .environmentObject(sharedDataManager) // Pass the data manager to the environment
         }
     }
-}
+}*/
+import SwiftUI
+import FirebaseCore
 
+
+
+@main
+struct GoMotoApp: App {
+    // Register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+    var body: some Scene {
+        WindowGroup {
+            NavigationView {
+                ContentView()
+            }
+        }
+    }
+    
+   
+    class AppDelegate: NSObject, UIApplicationDelegate {
+        func application(_ application: UIApplication,
+                         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            FirebaseApp.configure()
+            return true
+        }
+    }
+}
 // Define a shared data manager class to mimic data handling
 class SharedDataManager: ObservableObject {
     @Published var items: [CustomItem] = [] // Use CustomItem instead of Item

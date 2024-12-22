@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>24214405179-pcbkg33nvn5goapaf8dbglonmdmlpvf3.apps.googleusercontent.com</string>
+	<string>24214405179-4msdicp4ee5mn3tlic8c58ns614g7krl.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.24214405179-pcbkg33nvn5goapaf8dbglonmdmlpvf3</string>
+	<string>com.googleusercontent.apps.24214405179-4msdicp4ee5mn3tlic8c58ns614g7krl</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBhI3QV6NLnCbm5_jrRaESYioWX4CIzXvA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.antoniogarcia.GoMoto</string>
+	<string>com.antoniogarcia.GoMotoApp</string>
 	<key>PROJECT_ID</key>
 	<string>gomoto-c9e9f</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:24214405179:ios:b38c3b270a236940595c1e</string>
+	<string>1:24214405179:ios:ec2a6531f64ee136595c1e</string>
 </dict>
 </plist>

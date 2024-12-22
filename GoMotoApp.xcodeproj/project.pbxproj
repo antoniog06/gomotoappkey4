@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1800FF160DB104D508077EAF /* Pods_GoMoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53E6D8EFF3F2C978012F57 /* Pods_GoMoto.framework */; };
-		92CC78E62D17634D00152246 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92CC78E52D17634D00152246 /* GoogleService-Info.plist */; };
+		92E02C122D1791D00069AFC5 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 92E02C112D1791D00069AFC5 /* GoogleService-Info (3).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,34 +29,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92BE07FB2D1645390063C74C /* GoMoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92BE080D2D16453B0063C74C /* GoMotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92BE08172D16453B0063C74C /* GoMotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92CC78E52D17634D00152246 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92BE07FB2D1645390063C74C /* GoMotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BE080D2D16453B0063C74C /* GoMotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BE08172D16453B0063C74C /* GoMotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E02C112D1791D00069AFC5 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
 		B35F1E9640E627140F3C1CE1 /* Pods-GoMoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMoto.release.xcconfig"; path = "Target Support Files/Pods-GoMoto/Pods-GoMoto.release.xcconfig"; sourceTree = "<group>"; };
 		D607087C73921FD4FF281AB7 /* Pods-GoMoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMoto.debug.xcconfig"; path = "Target Support Files/Pods-GoMoto/Pods-GoMoto.debug.xcconfig"; sourceTree = "<group>"; };
 		EB53E6D8EFF3F2C978012F57 /* Pods_GoMoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoMoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		927A8A242D1781C10089BABE /* Exceptions for "GoMotoApp" folder in "GoMotoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 92BE07FA2D1645390063C74C /* GoMotoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		92BE07FD2D1645390063C74C /* GoMoto */ = {
+		92BE07FD2D1645390063C74C /* GoMotoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				927A8A242D1781C10089BABE /* Exceptions for "GoMotoApp" folder in "GoMotoApp" target */,
 			);
-			path = GoMoto;
+			path = GoMotoApp;
 			sourceTree = "<group>";
 		};
 		92BE08102D16453B0063C74C /* GoMotoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GoMotoTests;
 			sourceTree = "<group>";
 		};
 		92BE081A2D16453B0063C74C /* GoMotoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GoMotoUITests;
 			sourceTree = "<group>";
 		};
@@ -94,7 +101,6 @@
 				D607087C73921FD4FF281AB7 /* Pods-GoMoto.debug.xcconfig */,
 				B35F1E9640E627140F3C1CE1 /* Pods-GoMoto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,22 +115,22 @@
 		92BE07F22D1645390063C74C = {
 			isa = PBXGroup;
 			children = (
-				92BE07FD2D1645390063C74C /* GoMoto */,
+				92BE07FD2D1645390063C74C /* GoMotoApp */,
 				92BE08102D16453B0063C74C /* GoMotoTests */,
 				92BE081A2D16453B0063C74C /* GoMotoUITests */,
 				92BE07FC2D1645390063C74C /* Products */,
-				92CC78E52D17634D00152246 /* GoogleService-Info.plist */,
 				1B624128767244A40AD41AB4 /* Pods */,
 				7197D02A68530B7B003082C6 /* Frameworks */,
+				92E02C112D1791D00069AFC5 /* GoogleService-Info (3).plist */,
 			);
 			sourceTree = "<group>";
 		};
 		92BE07FC2D1645390063C74C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92BE07FB2D1645390063C74C /* GoMoto.app */,
-				92BE080D2D16453B0063C74C /* GoMotoTests.xctest */,
-				92BE08172D16453B0063C74C /* GoMotoUITests.xctest */,
+				92BE07FB2D1645390063C74C /* GoMotoApp.app */,
+				92BE080D2D16453B0063C74C /* GoMotoAppTests.xctest */,
+				92BE08172D16453B0063C74C /* GoMotoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92BE07FA2D1645390063C74C /* GoMoto */ = {
+		92BE07FA2D1645390063C74C /* GoMotoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92BE08212D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMoto" */;
+			buildConfigurationList = 92BE08212D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoApp" */;
 			buildPhases = (
 				0C2171CB7CB137219DBD4A1F /* [CP] Check Pods Manifest.lock */,
 				92BE07F72D1645390063C74C /* Sources */,
@@ -147,16 +153,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				92BE07FD2D1645390063C74C /* GoMoto */,
+				92BE07FD2D1645390063C74C /* GoMotoApp */,
 			);
-			name = GoMoto;
+			name = GoMotoApp;
 			productName = GoMoto;
-			productReference = 92BE07FB2D1645390063C74C /* GoMoto.app */;
+			productReference = 92BE07FB2D1645390063C74C /* GoMotoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92BE080C2D16453B0063C74C /* GoMotoTests */ = {
+		92BE080C2D16453B0063C74C /* GoMotoAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92BE08242D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoTests" */;
+			buildConfigurationList = 92BE08242D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoAppTests" */;
 			buildPhases = (
 				92BE08092D16453B0063C74C /* Sources */,
 				92BE080A2D16453B0063C74C /* Frameworks */,
@@ -170,14 +176,14 @@
 			fileSystemSynchronizedGroups = (
 				92BE08102D16453B0063C74C /* GoMotoTests */,
 			);
-			name = GoMotoTests;
+			name = GoMotoAppTests;
 			productName = GoMotoTests;
-			productReference = 92BE080D2D16453B0063C74C /* GoMotoTests.xctest */;
+			productReference = 92BE080D2D16453B0063C74C /* GoMotoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		92BE08162D16453B0063C74C /* GoMotoUITests */ = {
+		92BE08162D16453B0063C74C /* GoMotoAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92BE08272D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoUITests" */;
+			buildConfigurationList = 92BE08272D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoAppUITests" */;
 			buildPhases = (
 				92BE08132D16453B0063C74C /* Sources */,
 				92BE08142D16453B0063C74C /* Frameworks */,
@@ -191,9 +197,9 @@
 			fileSystemSynchronizedGroups = (
 				92BE081A2D16453B0063C74C /* GoMotoUITests */,
 			);
-			name = GoMotoUITests;
+			name = GoMotoAppUITests;
 			productName = GoMotoUITests;
-			productReference = 92BE08172D16453B0063C74C /* GoMotoUITests.xctest */;
+			productReference = 92BE08172D16453B0063C74C /* GoMotoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92BE07F62D1645390063C74C /* Build configuration list for PBXProject "GoMoto" */;
+			buildConfigurationList = 92BE07F62D1645390063C74C /* Build configuration list for PBXProject "GoMotoApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,9 +239,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92BE07FA2D1645390063C74C /* GoMoto */,
-				92BE080C2D16453B0063C74C /* GoMotoTests */,
-				92BE08162D16453B0063C74C /* GoMotoUITests */,
+				92BE07FA2D1645390063C74C /* GoMotoApp */,
+				92BE080C2D16453B0063C74C /* GoMotoAppTests */,
+				92BE08162D16453B0063C74C /* GoMotoAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CC78E62D17634D00152246 /* GoogleService-Info.plist in Resources */,
+				92E02C122D1791D00069AFC5 /* GoogleService-Info (3).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +340,12 @@
 /* Begin PBXTargetDependency section */
 		92BE080F2D16453B0063C74C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92BE07FA2D1645390063C74C /* GoMoto */;
+			target = 92BE07FA2D1645390063C74C /* GoMotoApp */;
 			targetProxy = 92BE080E2D16453B0063C74C /* PBXContainerItemProxy */;
 		};
 		92BE08192D16453B0063C74C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92BE07FA2D1645390063C74C /* GoMoto */;
+			target = 92BE07FA2D1645390063C74C /* GoMotoApp */;
 			targetProxy = 92BE08182D16453B0063C74C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -472,10 +478,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoMoto/Preview Content\"";
 				DEVELOPMENT_TEAM = T522658H4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoMoto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,7 +495,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogarcia.GoMoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogarcia.GoMotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -503,10 +511,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoMoto/Preview Content\"";
 				DEVELOPMENT_TEAM = T522658H4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoMoto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -518,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogarcia.GoMoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogarcia.GoMotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -541,7 +551,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMoto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMoto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMotoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMotoApp";
 			};
 			name = Debug;
 		};
@@ -560,7 +570,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMoto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMoto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoMotoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoMotoApp";
 			};
 			name = Release;
 		};
@@ -601,7 +611,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92BE07F62D1645390063C74C /* Build configuration list for PBXProject "GoMoto" */ = {
+		92BE07F62D1645390063C74C /* Build configuration list for PBXProject "GoMotoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92BE081F2D16453B0063C74C /* Debug */,
@@ -610,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92BE08212D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMoto" */ = {
+		92BE08212D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92BE08222D16453B0063C74C /* Debug */,
@@ -619,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92BE08242D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoTests" */ = {
+		92BE08242D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92BE08252D16453B0063C74C /* Debug */,
@@ -628,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92BE08272D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoUITests" */ = {
+		92BE08272D16453B0063C74C /* Build configuration list for PBXNativeTarget "GoMotoAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92BE08282D16453B0063C74C /* Debug */,
