@@ -198,8 +198,8 @@ class AppDelegate: UIResponder, NSObject, UIApplicationDelegate {
 
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             
-            GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
-            GMSPlacesClient.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
+            GMSServices.provideAPIKey("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")
+            GMSPlacesClient.provideAPIKey("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")
             
             return true
         }
