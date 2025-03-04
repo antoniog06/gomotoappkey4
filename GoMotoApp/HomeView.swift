@@ -1,56 +1,47 @@
+
+
 import SwiftUI
+import FirebaseAuth
 
 struct HomeView: View {
+    @EnvironmentObject var authManager: AuthManager
+    @EnvironmentObject var themeManager: ThemeManager
+    @State private var isLoggingOut: Bool = false
+
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                NavigationLink(destination: CombinedLiveMapView()) {
-                    Text("Request a Ride with Map")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                
-                NavigationLink(destination: PaymentView()) {
-                    Text("Payments")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                
-                NavigationLink(destination: RideHistoryView()) {
-                    Text("Ride History")
+            VStack {
+                Button(action: logoutUser) {
+                    Text("Logout")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.red)
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }
-                
-                NavigationLink(destination: SettingsView()) {
-                    Text("Settings")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.gray)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                
-                Spacer()
+                .padding(.top, 30)
             }
             .padding()
             .navigationTitle("GoMoto")
+            .background(themeManager.selectedTheme.backgroundColor.ignoresSafeArea())
+            .alert("Logging Out", isPresented: $isLoggingOut) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text("You have successfully logged out.")
+            }
+        }
+    }
+
+    private func logoutUser() {
+        authManager.logout { result in
+            switch result {
+            case .success:
+                isLoggingOut = true // Trigger the alert
+            case .failure(let error):
+                print("Error logging out: \(error.localizedDescription)")
+            }
         }
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
 
